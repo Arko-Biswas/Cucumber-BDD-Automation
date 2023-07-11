@@ -18,7 +18,7 @@
 #Sample Feature Definition Template
 
 
-Feature: Amazon Search
+Feature: Amazon Search Product
 
 Scenario: Search A Product
 Given I have a search field on Amazon Page
