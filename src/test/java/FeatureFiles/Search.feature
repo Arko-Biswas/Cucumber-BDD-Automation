@@ -23,12 +23,9 @@ Feature: Amazon Search Product
 Scenario: Search A Product
 Given I have a search field on Amazon Page
 When I search for a product with name "Apple MacBook Pro" and the price 1000
-Then Product with name ">>> Product found: Apple MacBook Pro" should be displayed to me
+Then Product with name "Apple MacBook Pro" should be displayed to me
 
-
-
-
-
+ 
 
 
 
