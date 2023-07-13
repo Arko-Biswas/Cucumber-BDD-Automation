@@ -1,0 +1,38 @@
+Two types of REg Expressions in Cucumber:
+
+1. Regular Expression --> [0-9]+, (Ild+)
+2. Cucumber Expression (2017)
+
+ rules:
+1. Step def file will be generating cucumber exp by default
+2. But you can use regular exp also in step def file
+3. You can mix both regular and cucumber exp in step definition file
+4. but you can not mix both expressions in a step definition method
+
+ {string} {int} {float}-- cucumber expression
+
+ Regular Expressions:| I
+
+ ([0-9]) ->capture group --> 0 to 9 digits appear
+ 
+ Quantifiers in RegExp: + * ? {n}
+ Quantifiers: how many times a character needs to be occurred
+ 
+ ([0-9]+) -> 0 to 9 digits appear (once or more)
+ ([0-9]{4}) --> 0000, 9999, 1212, 3456, 1234, 8888 ==> between 0-9, generate 4 digits number
+ ([0-9]*) -> zero or more ==> generate 0 or AT LEAST once
+ ([0-9]?) -> zero or once ==> generate 0 or AT MOST once
+
+Short hand character:
+
+ \d -- numeric digits
+ (\d+)
+ 
+ e.g. :
+ ([a-zA-Z0-9]+) ==> generate a character between a-z,A-z, 0-9 more than once
+ 
+ 
+ ############################## To run from terminal with maven ##############################
+ 
+ mvn test -Dcucumber.filter.tags="@Sanity or @Regression"
+ 

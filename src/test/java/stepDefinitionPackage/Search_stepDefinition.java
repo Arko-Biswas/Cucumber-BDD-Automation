@@ -1,7 +1,5 @@
 package stepDefinitionPackage;
 
-import org.junit.jupiter.api.Assertions;
-
 import amazonImplementation.*;
 import io.cucumber.java.en.*;
 
@@ -38,7 +36,7 @@ public class Search_stepDefinition {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
 		
-		System.out.println(">>> Step 3 Executed: Product displayed - ");
+		System.out.println(">>> Step 3 Executed: Product displayed ??");
 		
 		searchAmazon_object = new SearchAmazon();
 		System.out.println(searchAmazon_object.displayProduct(AmazonImplementation_object));
