@@ -5,7 +5,7 @@ Feature: User Registration
     Given User is on registration page
     When User enters following user details
       | arko | automation | arko@gmail.com  | 99999999 | Pune   |
-      | tom  | cucumber   | tom@gmail.com   |  6666666 | Mumbai |
+      | tom  | cucumber   | tom@gmail.com   | 66666666 | Mumbai |
       | lisa | selenium   | harry@gmail.com | 33333333 | London |
     Then User registration should be successful
 
@@ -13,7 +13,7 @@ Feature: User Registration
     Given User is on registration page
     When User enters following user details with columns
       | firstname | work       | email           | phone    | city   |
-      | arko      | automation | arko@gmail.com  | 99999999 | Pune   |
-      | tom       | cucumber   | tom@gmail.com   |  6666666 | Mumbai |
-      | lisa      | selenium   | harry@gmail.com | 33333333 | London |
+      | arko      | automation | arko@gmail.com  | 33333333 | Pune   |
+      | tom       | cucumber   | tom@gmail.com   | 22222222 | Mumbai |
+      | lisa      | selenium   | harry@gmail.com | 11111111 | London |
     Then User registration should be successful

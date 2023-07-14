@@ -20,7 +20,7 @@ Feature: Uber Booking Feature
   @Sanity @Regression
   Scenario: Booking Cab: HatchBack
     Given User wants to select a car type "sedan" from the app
-    When User selects car type "sedan" and pick up point "Mumbai" and drop point "Pune"
+    When User selects car type "sedan" and pick up point "Mumbai" and drop point "Chennai"
     Then Driver starts journey
     When driver ends journey
     Then user pays 200 USD for the car type "sedan" ride

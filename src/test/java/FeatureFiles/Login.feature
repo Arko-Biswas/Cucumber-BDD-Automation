@@ -12,6 +12,6 @@ Feature: Login Feature
 
     Examples: 
       | UserName          | Password          |
-      | incorrectuserName |            123456 |
+      | incorrectuserName |       78956544122 |
       | arkobiswas        | incorrectPassword |
       | incorrectuserName | incorrectPassword |
